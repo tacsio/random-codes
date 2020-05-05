@@ -1,4 +1,4 @@
-package me.random.basic;
+package io.tacsio;
 
 public class Person {
     public final int age;
