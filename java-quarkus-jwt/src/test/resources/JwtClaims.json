@@ -1,0 +1,17 @@
+{
+	"iss": "https://tacsio.io/quarkus-jwt",
+	"jti": "q-123",
+	"sub": "quarkus-jwt",
+	"upn": "test@tacsio.io",
+	"preferred_username": "test",
+	"aud": "quarkus-jwt",
+	"birthdate": "2018-10-03",
+	"roleMappings": {
+			"group1": "Group1MappedRole",
+			"group2": "Group2MappedRole"
+	},
+	"groups": [
+			"Echoer",
+			"Subscriber"
+	]
+}

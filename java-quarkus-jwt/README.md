@@ -28,3 +28,26 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/java-quarkus-jwt-1.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+
+
+## Generate RSA Public Key PEM Format
+
+1. Generate Private RSA key. 
+
+2048 means the number of bits, that indicates the size of key.
+
+```shell
+openssl genrsa -out rsa.private 2048
+```
+
+2. Generate the Public Key
+
+```shell
+openssl rsa -in rsa.private -out public.pem -pubout -outform PEM
+```
+
+## Generate Token (test class)
+
+```shell
+mvn exec:java -Dexec.mainClass=io.tacsio.quarkus.jwt.config.GenerateToken -Dexec.classpathScope=test -Dexec.args="//JwtClaims.json 3600"
+```
