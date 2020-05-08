@@ -1,13 +1,8 @@
 package io.tacsio.quarkus.jwt;
 
 import java.security.Principal;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Random;
-import java.util.stream.IntStream;
 
 import javax.annotation.security.PermitAll;
 import javax.annotation.security.RolesAllowed;
@@ -20,7 +15,6 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.SecurityContext;
 
-import org.eclipse.microprofile.jwt.Claims;
 import org.eclipse.microprofile.jwt.JsonWebToken;
 
 @Path("/jwt")
@@ -29,8 +23,6 @@ public class TokenSecuredResource {
 
     @Inject
     private JsonWebToken jwt;
-
-    private final Random rnd = new Random();
 
     // Not secured
     @GET
