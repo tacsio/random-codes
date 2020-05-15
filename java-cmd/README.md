@@ -1,6 +1,6 @@
 # Java CMD
 
-Java 11 has a lot of new features, a really cool feature included in [JEP 330](https://openjdk.java.net/jeps/330) is related to the enhancement of the java launcher to run a program supplied as a single file of Java source code.
+Java 11 has a lot of new features, a cool feature included in [JEP 330](https://openjdk.java.net/jeps/330) is related to the enhancement of the java launcher to run a program supplied as a single file of Java source code.
 Another interesting change is the support to execute Unix shebang based files.
 
 Create executable scripts in Python is very simple:
