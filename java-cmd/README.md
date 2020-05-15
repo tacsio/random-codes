@@ -19,7 +19,7 @@ javac Hello.java
 java Hello
 ```
 
-Now with Java 11 with JEP 330 the execution is was little simplified.  
+Now with Java 11 with JEP 330 the execution was little simplified.  
 
 ```java
 public class Hello {
